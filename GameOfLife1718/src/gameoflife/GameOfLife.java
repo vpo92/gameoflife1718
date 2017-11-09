@@ -21,8 +21,8 @@ import javax.swing.JFrame;
 public class GameOfLife  extends JComponent implements WindowListener{
 
     private static final int CELL_SIZE = 15;
-    private static final String CELL_COLOR = "333333";
     public static  final int sleepTime = 100;
+    private static final String CELL_COLOR = "222222";
     
     private int[][] zone;
     private int nbCol = 0;
