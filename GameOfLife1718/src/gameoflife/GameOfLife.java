@@ -22,6 +22,7 @@ public class GameOfLife  extends JComponent implements WindowListener{
 
     private static final int CELL_SIZE = 15;
     private static final String CELL_COLOR = "333333";
+    public static  final int sleepTime = 100;
     
     private int[][] zone;
     private int nbCol = 0;
@@ -216,7 +217,6 @@ public class GameOfLife  extends JComponent implements WindowListener{
     public static void main(String[] args) {
         
         int nbIter =-1;//-1 = infini
-        int sleepTime = 100;
         
         try {
             GameOfLife g = fromFile(new File("test/osci.txt"));
